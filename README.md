@@ -10,3 +10,7 @@ Project repo for the WWC PDX website
 
 ### OLD WEBPAGE
 ![Current desktop site](/screenshots/WWCode-current-site.png)
+
+#### ATTRIBUTIONS
+* [patternlab-node](https://github.com/pattern-lab/patternlab-node)
+* [starterkit-mustache-demo](https://github.com/pattern-lab/starterkit-mustache-demo)
