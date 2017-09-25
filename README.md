@@ -1,5 +1,5 @@
 # wwc-website
-Project repo for the WWC PDX website
+Project repo for the WWC PDX website (Temporary link: https://wwcodeportland.github.io/wwc-website/)
 
 [this is a work in progress - check back soon for updated versions]
 
