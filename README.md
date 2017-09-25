@@ -1,6 +1,8 @@
 # wwc-website
 Project repo for the WWC PDX website 
+
 (Temporary link: https://wwcodeportland.github.io/wwc-website/)
+
 Project Trello board: https://trello.com/b/p1GOexLQ/wwc-website-project
 
 [this is a work in progress - check back soon for updated versions]
