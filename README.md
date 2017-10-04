@@ -1,11 +1,13 @@
 # wwc-website
 Project repo for the WWC PDX website 
 
-(Temporary link: https://wwcodeportland.github.io/wwc-website/)
-
-Project Trello board: https://trello.com/b/p1GOexLQ/wwc-website-project
+* Development project link: https://wwcodeportland.github.io/wwc-website/)
+* Project Trello board: https://trello.com/b/p1GOexLQ/wwc-website-project
 
 [this is a work in progress - check back soon for updated versions]
+
+### LOCAL SETUP
+* TBD
 
 ### WEBSITE PROPOSED REDESIGN
 [Current desktop mockup prototype](https://xd.adobe.com/view/e20a88af-fcee-441d-a2b5-2493744d2247/)
