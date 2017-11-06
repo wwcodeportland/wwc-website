@@ -30,6 +30,8 @@ The following sections are intended for people who have some familiarity with we
 * [Django Girls Tutorial](https://tutorial.djangogirls.org/) - available in many languages, easy for complete beginners to use.
 * [Django First Steps](https://docs.djangoproject.com/en/1.11/#first-steps) - more detailed introductory materials on the Django website.
 
+If you've gone through one of these tutorials and want to review the basics for adding a page to a site, see the [Django Page Checklist](https://emcain.github.io/django-page-checklist/).
+
 ### MVC framework
 
 While Django's architecture fits pretty well into the [Model-View-Controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) concept, people who are used to other web frameworks may be confused by its naming convention. The concept of the "view" layer is represented by two parts, the `views.py`  and any template files. `views.py` generates the data that is used to render a template, and the template files outline the structure of the HTML that will be rendered and passed to the client.
@@ -39,8 +41,6 @@ While Django's architecture fits pretty well into the [Model-View-Controller](ht
 [This section of the Django FAQ](https://docs.djangoproject.com/en/1.11/faq/general/#django-appears-to-be-a-mvc-framework-but-you-call-the-controller-the-view-and-the-view-the-template-how-come-you-don-t-use-the-standard-names) goes into more detail. If this is confusing to you, just remember that in Django, the word "view" refers to a specific part of the framework that is related to the "view" layer in MVC, but it does not correspond perfectly.
 
 ### Templates
-
-> COMING SOON: I'm going to write up a more detailed description of how Django's template engine works for people coming from a front-end background.
 
 Please see these resources to learn how Templates work in Django.
 
