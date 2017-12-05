@@ -47,13 +47,19 @@ How to get this project running on your machine.
     cd wwc-website
     ```
 
-6. Set up and activate a [Python virtual environment](https://docs.python.org/3/library/venv.html). A virtual environment (or `virtualenv`) isolates the project so that changes made to the project won't affect any others you're also developing.
-
+6. Set up a [Python virtual environment](https://docs.python.org/3/library/venv.html). A virtual environment (or `virtualenv`) isolates the project so that changes made to the project won't affect any others you're also developing.
+    
     ```sh
     python3 -m venv venv
+    ```
+    Now activate the virtual environment. For Mac:
+    ```
     source venv/bin/activate
     ```
-
+    For Windows:
+    ```
+    venv\Scripts\activate
+    ```
     You should see `(venv)` prefixed in front of your terminal prompt, letting you know the `virtualenv` is active.
 
 
@@ -71,7 +77,6 @@ How to get this project running on your machine.
     ```sh
     pip install -r requirements.txt
     ```
-
 8. Run the app:
 
     ```sh
