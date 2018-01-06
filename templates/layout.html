@@ -1,74 +1,47 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     {# Make modifiable head elements #}
     <head>
-        <title>{% block title %}Women Who Code PDX{% endblock title %}</title>
-        {% block head_favicon %}
-            <link rel="icon" type="image/png"
-                  href="{{ STATIC_URL }}images/favicon.ico">
-        {% endblock head_favicon %}
+        <title>{% block title %}Women Who Code PDX{% endblock %}</title>
+        {% block head_favicon %}{% endblock %}            
         {% block head_meta %}
-            {% block head_meta_charset %}
-                <meta http-equiv="Content-Type"
-                      content="text/html; charset=utf-8" />
-            {% endblock head_meta_charset %}
-            {% block head_meta_contentlanguage %}
-                <meta http-equiv="Content-Language" value="en-US" />
-            {% endblock head_meta_contentlanguage %}
-            {% block head_meta_viewport %}
-                <meta name="viewport"
-                      content="width=device-width, initial-scale=1.0">
-            {% endblock head_meta_viewport %}
-        {% endblock head_meta %}
-        {% block head_css %}
-            {% block head_css_site %}
-                <link href="{{ STATIC_URL }}css/bootstrap.min.css"
-                      rel="stylesheet" media="screen">
-                <link href="{{ STATIC_URL }}css/app.css"
-                      rel="stylesheet" media="screen">
-            {% endblock head_css_site %}
-            {% block head_css_section %}{% endblock head_css_section %}
-            {% block head_css_page %}{% endblock head_css_page %}
-        {% endblock head_css %}
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />     
+            <meta http-equiv="Content-Language" value="en-US" />   
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% endblock %}
+        {% block head_css %}     
+            <link rel="stylesheet" media="screen" href="{% static 'css/styles.css' %}">  
+        {% endblock %}
     </head>
 
     <body>
         {# Navigation Menu #}
         <header>
-            <div class="navbar navbar-default navbar-static-top 
-            {% block nav-style %}{% endblock %}">
-                <div class="container p-none">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="/">Women Who Code PDX</a>
-                    </div>
-                    <div class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <!-- {% if user.is_authenticated %}
-                                <li><a href="">Logout</a></li>
-                                <li><a href=""
-                                       class="p-r-none">Accounts</a></li>
-                            {% else %}
-                                <li><a href="">Login</a></li>
-                                <li><a href="" class="p-r-none">Sign Up</a></li>
-                            {% endif %} -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <nav class="top-left-nav">
+                <a href="#">WWC Logo</a>                       
+                <a href="">Get Involved</a>
+                <a href="">Events</a>
+                <a href="">Code of Conduct</a>
+                <a href="">Sponsors</a>
+                <a href="">Our Network</a>
+                <a href="">Blog</a>
+            </nav>
+            <nav class="top-right-nav">
+                <a href="www.twitter.com">Twitter</a>
+                <a href="www.facebook.com">Facebook</a>
+                <a href="www.instagram.com">Instagram</a>
+                <a href=""><button>Donate</button></a>
+            </nav>
         </header>
+
         {# The Document Body #}
         <div id="site-wrapper">
             {% block content %}
                 if you see this, something is wrong!
             {% endblock content %}
         </div>
+
         {# The Footer #}
         <div class="footer">
             <div class="container">
@@ -80,8 +53,6 @@
     {# Set of blocks that can be used to display JavaScript files #}
     {% block footer_javascript %}
         {% block footer_javascript_site %}
-            <script src="{{ STATIC_URL }}js/jquery.min.js"></script>
-            <script src="{{ STATIC_URL }}js/app.js"></script>
         {% endblock footer_javascript_site %}
         {% block footer_javascript_section %}{% endblock footer_javascript_section %}
         {% block footer_javascript_page %}{% endblock footer_javascript_page %}
